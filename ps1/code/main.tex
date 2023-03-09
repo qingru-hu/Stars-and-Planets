@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Scattering}
+\author{zys}
+\date{March 2023}
+
+\begin{document}
+
+\maketitle
+
+\noindent(a)Set the origin of $x$ axis at the periapsis of the trajectory, and denote the periapsis-passing time as $t=0$. At any time $t$, the $y$ component of the equation of motion is given by:
+\begin{equation}
+    \frac{\mathrm{d}v_y}{\mathrm{d}t}=\frac{GM}{b^2+x^2}=\frac{GM}{b^2+(vt)^2}.
+\end{equation}
+The above equation can be integrated directly and gives:
+\begin{equation}
+        v_y=\int_0^{v_y}\mathrm{d}v'_y=\int_{-\infty}^\infty\frac{GM}{b^2+(vt)^2}\mathrm{d}t=\frac{GM}{bv}\int_{-\infty}^\infty\frac{GM}{1+u^2}\mathrm{d}u=\frac{\pi GM}{bv}.
+\end{equation}\\
+(b)The scattering angle can easily be derived by:
+\begin{equation}
+    \psi\approx\frac{v_y}{v_x}=\frac{\pi GM}{bv^2}.
+\end{equation}\\
+(c)Assume that we have a source object at distance $d_s$ from the observer, and a lens object at distance $d_l<d_s$. We further assume that these two objects seen from the observer are aligned. Now we have the following geometric relation
+\begin{equation}
+    \psi(d_s-d_l)=\theta_\mathrm{E}d_s
+\end{equation}
+and
+\begin{equation}
+    b=\theta_\mathrm{E}d_l.
+\end{equation}
+Therefore we have:
+\begin{equation}
+    \frac{\pi GM}{\theta_\mathrm{E}d_l c^2}(d_s-d_l)=\theta_\mathrm{E}d_s.
+\end{equation}
+And it turns out to be:
+\begin{equation}
+    \theta_\mathrm{E}=\sqrt{\frac{\pi GM}{c^2}\frac{d_s-d_l}{d_s d_l}}.
+\end{equation}
+
+\end{document}

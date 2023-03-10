@@ -13,26 +13,27 @@
 
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral1}.1 Sun's efficiency}}
 We can calculate the energy density of the Sun from the 
-solar constant, that is the energy recieved by the Earth in 
+solar constant, that is the energy recieved by the Earth surface in 
 unit area in unit time. 
-The solar constant is $P = 1367 \ \text{W} \text{m}^{-2}$, and we know that 
+The solar constant is $P = 1362 \ \text{W} \text{m}^{-2}$, and we know that 
 the distance from the Sun to the Earth is $r = 1$ au, so we 
 can calculate the luminosity of the Sun:
 \begin{equation}
-    L = 4 \pi r^2 P = 3.845 \times 10^{26} \ W
+    L = 4 \pi r^2 P = 3.83 \times 10^{26} \ W
 \end{equation}
 Therefore, the energy output of the Sun per unit mass $\rho_\text{E, Sun}$ is:
 \begin{equation}
-    \rho_\text{E, Sun} = \frac{L}{M_{\bigodot}} = 1.93 \times 10^{-4} W \ kg^{-1}
+    \rho_\text{E, Sun} = \frac{L}{M_{\bigodot}} = 1.92 \times 10^{-4} \ \text{W} \ \text{kg}^{-1}
 \end{equation}
 
 The radiation energy density of a human being can be 
-estimated from a human being's temperature, which is normally $T = 300K$.
-And we can assume that the skin area of a human being is about $A=1m^2$, and 
-the mass of a human being is $m = 50 \ kg$.
-Therefore, we can calculate the radiation energy of a human being to be:
+estimated from a human being's body temperature, which is normally $T = 310 \ K$.
+And we can assume that the skin area of a human being is about $A=0.5 \ m^2$, and 
+the mass of a human being is $m = 50 \ \text{kg}$.
+If we assume that the radiation of a human being obey the blackbody radiation, 
+we can calculate the radiation energy density $\rho_{\text{E, Human}}$ of a human being to be:
 \begin{equation}
-    \rho_\text{E, Human} = \frac{\sigma T^4 A}{m} = 9.1854 \ W kg^{-1}
+    \rho_\text{E, Human} = \frac{\sigma T^4 A}{m} = 5.236 \ W \ \text{kg}^{-1}
 \end{equation}
 
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral1}.2 Color-Magnitude diagram}}
@@ -43,7 +44,7 @@ highlighted with a blue dot and the brightest one with a red dot.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=8cm]{color_mag.png}
-    \caption{The color-magnitude diagram of "hipparcos-bright.txt"}
+    \caption{The color-magnitude diagram of ``hipparcos-bright.txt"}
     \label{fig1}
 \end{figure}
 
@@ -62,14 +63,17 @@ According to the Wien's displacement law:
 \begin{equation}
     \lambda_{\text{max}} = \frac{0.2898 \ \text{cm} \ \text{K}}{T}
 \end{equation}
-the lower the effective temperature $T_{\text{eff}}$, the more radiation 
-in the "visual" band (V) and the less radiation in the "blue" band (B). 
-Therefore, the star has larger magnitude in the "blue" band (B) 
-and smaller magnitude in the "visual" band (V), and their subtraction $B-V$ 
-color is higher. That's why stars of higher $B-V$ have lower $T_{\text{eff}}$.
+the higher the effective temperature $T_{\text{eff}}$, 
+the shorter the wavelength of the maximum radiation will be.
+The flux in both bands will increase, but it will increae more 
+in the "blue" band (B). 
+Therefore, the magnitude of the star will decrease more in the ``blue" band (B) 
+and less in the ``visual" band (V), and their subtraction $B-V$ 
+color is lower. 
+That's why stars of higher $B-V$ have lower $T_{\text{eff}}$.
 
 \subsection*{(d)}
-The "hipparcos-bright" sample doesn't contain white dwarfs. The main sequence 
+The ``hipparcos-bright" sample doesn't contain white dwarfs. The main sequence 
 stars and the RGB stars are labeled as 
 blue and orange respectively in the Fig.\ref{class}. 
 I only does a rough classification of these two groups of stars.
@@ -81,6 +85,10 @@ I only does a rough classification of these two groups of stars.
 \end{figure}
 
 \subsection*{(e)}
+I plot the Hertsprung-Russell diagram (luminosity vs effective temperature) in 
+Fig.\ref{class}
+of the hipparcos-bright samples. 
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=10cm]{HR_diag.png}
@@ -229,7 +237,6 @@ The scattering angle can easily be derived by:
     \psi\approx\frac{v_y}{v_x}=\frac{\pi GM}{bv^2}.
 \end{equation}
 
-
 \subsection*{(c)}
 Assume that we have a source object at distance $d_s$ from the observer, and a lens object at distance $d_l<d_s$. We further assume that these two objects seen from the observer are aligned. Now we have the following geometric relation
 \begin{equation}
@@ -282,7 +289,7 @@ The magnification factor $m$ can be caldulated:
 \begin{equation}
     m = \sum_{i = 1}^{2} \frac{\theta_i^4}{\theta_i^4 - \theta_{\text{E}}^4} = 1.052
 \end{equation}
-The source will be brighter in magnitude by $2.5\times \log_{10} m = 0.055$
+The source will be brighter in magnitude by $2.5\times \log_{10} m = 0.055$.
 
 \subsection*{(f)}
 From (e), we can see that when the source cross the 
@@ -302,7 +309,7 @@ the mass ratio of the planet and the host star
 is proportional to the square root of the Einstein ring 
 crossing time.
 \begin{equation}
-    \frac{m_{\text{p}}}{m_{\star}} = (\frac{t_{\text{E, cross, planet}}}{t_{\text{E, cross, star}}})^2
+    \frac{m_{\text{p}}}{m_{\star}} = (\frac{\theta_{\text{E, planet}}}{\theta_{\text{E, star}}})^2 = (\frac{t_{\text{E, cross, planet}}}{t_{\text{E, cross, star}}})^2
 \end{equation}
 If $m_{\star} = 0.5 M_{\bigodot}$, then the mass of the planet is:
 \begin{equation}

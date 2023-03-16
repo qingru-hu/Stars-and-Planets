@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.4)  9 MAR 2023 22:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.4)  10 MAR 2023 19:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -275,7 +275,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <color_mag.png, id=1, 433.62pt x 433.62pt>
 File: color_mag.png Graphic file (type png)
 <use color_mag.png>
-Package pdftex.def Info: color_mag.png  used on input line 45.
+Package pdftex.def Info: color_mag.png  used on input line 46.
 (pdftex.def)             Requested size: 227.62204pt x 227.62082pt.
 [1
 
@@ -283,35 +283,36 @@ Package pdftex.def Info: color_mag.png  used on input line 45.
 <two_class.png, id=15, 433.62pt x 433.62pt>
 File: two_class.png Graphic file (type png)
 <use two_class.png>
-Package pdftex.def Info: two_class.png  used on input line 78.
+Package pdftex.def Info: two_class.png  used on input line 82.
 (pdftex.def)             Requested size: 227.62204pt x 227.62082pt.
 <HR_diag.png, id=16, 433.62pt x 433.62pt>
 File: HR_diag.png Graphic file (type png)
 <use HR_diag.png>
-Package pdftex.def Info: HR_diag.png  used on input line 86.
+Package pdftex.def Info: HR_diag.png  used on input line 94.
 (pdftex.def)             Requested size: 284.52756pt x 284.54257pt.
 <orbit.jpg, id=17, 1533.73pt x 1084.05pt>
 File: orbit.jpg Graphic file (type jpg)
 <use orbit.jpg>
-Package pdftex.def Info: orbit.jpg  used on input line 97.
+Package pdftex.def Info: orbit.jpg  used on input line 105.
 (pdftex.def)             Requested size: 341.43306pt x 241.32028pt.
-<trainsit.jpg, id=18, 1150.2975pt x 473.51906pt>
+ [2 <./color_mag.png>] [3 <./two_class.png> <./HR_diag.png>]
+<trainsit.jpg, id=27, 1150.2975pt x 473.51906pt>
 File: trainsit.jpg Graphic file (type jpg)
 <use trainsit.jpg>
-Package pdftex.def Info: trainsit.jpg  used on input line 117.
+Package pdftex.def Info: trainsit.jpg  used on input line 125.
 (pdftex.def)             Requested size: 398.33858pt x 163.97116pt.
- [2 <./color_mag.png>] [3 <./two_class.png> <./HR_diag.png>] [4 <./orbit.jpg> <./trainsit.jpg>]
+ [4 <./orbit.jpg> <./trainsit.jpg>]
 <bianry.jpg, id=34, 647.41875pt x 406.51875pt>
 File: bianry.jpg Graphic file (type jpg)
 <use bianry.jpg>
-Package pdftex.def Info: bianry.jpg  used on input line 184.
+Package pdftex.def Info: bianry.jpg  used on input line 192.
 (pdftex.def)             Requested size: 341.43306pt x 214.387pt.
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+ [5] [6 <./bianry.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
-[6 <./bianry.jpg>] [7] [8] (./ps1.aux)
+[7] [8] (./ps1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -319,13 +320,13 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4015 strings out of 474971
  64973 string characters out of 5780121
- 425177 words of memory out of 5000000
+ 426177 words of memory out of 5000000
  25476 multiletter control sequences out of 15000+600000
  475552 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,62p,301b,287s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on ps1.pdf (8 pages, 655493 bytes).
+Output written on ps1.pdf (8 pages, 655350 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream

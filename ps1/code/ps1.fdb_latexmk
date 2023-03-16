@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1678373477 "d:/github/Stars-and-Planets/ps1/code/ps1.tex" "ps1.pdf" "ps1" 1678373479
+["pdflatex"] 1678446252 "d:/github/Stars-and-Planets/ps1/code/ps1.tex" "ps1.pdf" "ps1" 1678446254
   "HR_diag.png" 1678372199 215682 a2669e113b85ff9bbf4b5e5c333ab1fb ""
   "bianry.jpg" 1678372199 34837 a7d528c5c93649cbe07a934074ca95c9 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1667557178 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -66,10 +66,10 @@
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1667566959 3063425 688314ca18d1aea333cd9cbeacf519df ""
   "c:/texlive/2022/texmf.cnf" 1667566789 713 e69b156964470283e0530f5060668171 ""
   "color_mag.png" 1678372199 100630 f4a1f6f42d5326e0b67ae90cb6b72111 ""
-  "d:/github/Stars-and-Planets/ps1/code/ps1.tex" 1678373477 13469 f0be3dae6d1a5498f5b3e0c4230d519c ""
+  "d:/github/Stars-and-Planets/ps1/code/ps1.tex" 1678446252 13889 7cf73bdfd7b8bbacd6f776cb35e43d48 ""
   "orbit.jpg" 1678372199 71025 2ab871221bd56bfff4afee2b6c1e3902 ""
-  "ps1.aux" 1678373479 1147 6cde02357e436e1b4ad27625e9e7c605 "pdflatex"
-  "ps1.tex" 1678373477 13469 f0be3dae6d1a5498f5b3e0c4230d519c ""
+  "ps1.aux" 1678446253 1148 d585ababcddb579a846fa85a07cb0218 "pdflatex"
+  "ps1.tex" 1678446252 13889 7cf73bdfd7b8bbacd6f776cb35e43d48 ""
   "trainsit.jpg" 1678372199 113155 541669a3dda3dc00874e632db29ee842 ""
   "two_class.png" 1678372199 115953 1c3f808d219f6c2d01bfc25a05a7adf0 ""
   (generated)

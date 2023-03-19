@@ -1,0 +1,145 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx, geometry, subfigure, amsmath, adjustbox, array}
+\geometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=2cm}
+\setlength{\baselineskip}{12pt}
+\renewcommand\arraystretch{1.5}
+
+\title{Stars and Planets Problem Set1}
+\author{Qingru Hu}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral1}.1 Radiation Pressure}}
+\subsection*{(a)}
+The dimension of $P_{\text{rad}}$ is $[E][L]^{-3}$. The physical quantities that are related to 
+pressure from the derivation of state equations are:
+\begin{align*}
+    kT \sim [E] \\
+    h \sim [E][T]
+\end{align*}
+However, only with the two quantities above we cannot cancel out $T$ and add in $L$. 
+Given the pressure is produced by radiation, 
+we can introduce the speed of light $c \sim  [L][T]^{-1}$ to help us.
+After some calculations, we can get that the dimension of radiation pressure is:
+\begin{equation*}
+    P_{\text{rad}} \sim \frac{(kT)^4}{h^3c^3}
+\end{equation*}
+
+\subsection*{(b)}
+From the energy density $u_\nu$, we can get the distribution function for the energy $f(\nu)$:
+\begin{equation*}
+    f(\nu) = u_\nu / (h\nu) = \frac{8\pi \nu^2}{c^3} \frac{1}{e^{h\nu/kT} - 1}
+\end{equation*}
+And the relation between the distribution function for the energy and the momenta is:
+\begin{align*}
+    f(\nu) \text{d}\nu &= f(p) \text{d}p \\
+    p &= \frac{h}{\lambda} = \frac{h\nu}{c} \\
+    \text{d}p &= \frac{h}{c} \text{d}\nu
+\end{align*}
+Therefore, the distribution function for the momenta is:
+\begin{equation*}
+    f(p) = \frac{8\pi}{h^3} p^2 \frac{1}{e^{cp/kT}-1}
+\end{equation*}
+The radiation pressure is:
+\begin{equation*}
+    P_{\text{rad}} = \int_0^{+\infty} c p f(p) \text{d} p = \frac{8\pi^5}{45} \frac{(kT)^4}{h^3 c^3}
+\end{equation*}
+The relation between radiation energy density and radiation pressure is:
+\begin{equation*}
+    P_\text{rad} = \frac{u_\text{rad}}{3}
+\end{equation*}
+
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral1}.2 Physical structure of protoplanetary disks}}
+\subsection*{(a)}
+The standard astrophysical “cosmic” abundances for the elements gives:
+\begin{equation*}
+    X=0.75, \ Y= 0.25
+\end{equation*}
+Since the hydrogen and helium gas are in molecular form, the relative mean molecular weight is:
+\begin{align*}
+    \mu_{\text{H}_2} = 2 \\
+    \mu_{\text{He}} = 4
+\end{align*}
+The mean molecular weight $\mu$ of the gas is:
+\begin{align*}
+    \frac{1}{\mu} &= \frac{X}{\mu_{\text{H}_2}} + \frac{Y}{\mu_{\text{He}}} \\
+    \mu &= 2.29
+\end{align*}
+
+\subsection*{(b)}
+Assume the mass of the star is $M$, the gravitational constant is $G$ and the positive direction of $z$ axis is pointing upward.
+Write down Newton's second law in the vertical direction:
+\begin{equation*}
+    g_{\text{z}, \star} = - \frac{GM}{r^2 + z^2} \frac{z}{\sqrt{r^2 + z^2}} = - \frac{GM}{r^2} \frac{z}{(1 + (\frac{z}{r})^2)^{\frac{3}{2}}}
+\end{equation*}
+For $z << r$:
+\begin{equation*}
+    \frac{z}{(1 + (\frac{z}{r})^2)^{\frac{3}{2}}} = z(1-\frac{3}{2} (\frac{z}{r})^2) \sim z
+\end{equation*}
+Therefore:
+\begin{equation*}
+    g_{\text{z}, \star} = - \frac{GM}{r^2} z \approx - \Omega^2_\text{K} z
+\end{equation*}
+
+\subsection*{(c)}
+The equation of state for the gas in the disk is:
+\begin{equation*}
+    P = nkT = \frac{\rho}{\mu m_u} kT
+\end{equation*}
+Since the $g_{\text{z}, \star}$ has included the minus sign, the hydrostatic balance is:
+\begin{align*}
+    \frac{\text{d} P}{\text{d} z} = \rho g_{\text{z}, \star}
+\end{align*}
+Combine the two equations and we get the ordinary differential equation for $\rho(z)$:
+\begin{equation*}
+    \frac{\text{d} \rho}{\text{d} z} = - \frac{\Omega^2_\text{K} \mu m_u}{kT} z \rho
+\end{equation*}
+The solution is:
+\begin{equation*}
+    \rho(z) = C e^{-\frac{\Omega^2_\text{K} \mu m_u}{2kT} z^2}
+\end{equation*}
+
+\subsection*{(d)}
+The standard deviation $\sigma$ or the scaleheight $H$ is:
+\begin{equation*}
+    \sigma = H = \sqrt{\frac{kT}{\mu m_u \Omega^2_\text{K}}}
+\end{equation*}
+And the $\rho(z)$ can be written as:
+\begin{equation*}
+    \rho(z) = C e^{-\frac{z^2}{2 H^2}}
+\end{equation*}
+
+\subsection*{(e)}
+The surface density is:
+\begin{align*}
+    \Sigma &= \int_{-\infty}^{+\infty} \rho(z) \text{d}z = \int_{-\infty}^{+\infty} C e^{-\frac{z^2}{2 H^2}} \text{d}z \\
+    \Sigma &= C H \sqrt{2\pi} \\
+    C &= \frac{\Sigma}{H \sqrt{2\pi}}
+\end{align*}
+Therefore, $\rho(z)$ can be rewritten as:
+\begin{equation*}
+    \rho(z) = \frac{\Sigma}{H \sqrt{2\pi}} e^{-\frac{z^2}{2 H^2}}
+\end{equation*}
+
+\subsection*{(f)}
+When $z<<r$, use the small angle approximation:
+\begin{equation*}
+    \tan \theta = \frac{z}{r} \approx \theta
+\end{equation*}
+Since $z$ only depends on $r$, take derivatives on both sides:
+\begin{equation*}
+    \frac{\text{d} \theta}{\text{d} r} = \frac{\text{d} }{\text{d} r} (\frac{z}{r})
+\end{equation*}
+The fraction $\epsilon$ of the stellar luminosity $L_\star$ that is being intercepted 
+by the disk at radius interval $[r, r + \Delta r]$ is:
+\begin{align*}
+    \epsilon &= \frac{1}{2\pi} \int \sin \theta \text{d} \theta \text{d} \phi 
+    = \int_{\theta}^{\theta + \text{d} \theta} \sin \theta \text{d} \theta 
+    = \int_{r}^{r + \text{d} r} \frac{z}{r} \frac{\text{d} }{\mathrm{d} r} (\frac{z}{r}) \text{d}r \\
+    &= \frac{1}{2} \frac{\text{d} }{\mathrm{d} r} (\frac{z}{r})^2 \Delta r
+    = \frac{\beta^2}{2} \frac{\text{d} }{\mathrm{d} r} (\frac{H}{r})^2 \Delta r = \beta^2 \frac{H}{r} (\frac{H}{r})' \Delta r
+\end{align*}
+
+\end{document}

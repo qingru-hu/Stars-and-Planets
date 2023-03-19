@@ -4,6 +4,9 @@
 \setlength{\baselineskip}{12pt}
 \renewcommand\arraystretch{1.5}
 \renewcommand{\d}{\mathrm{d}}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\g}{\mathrm{g}}
 
 \title{Stars and Planets Problem Set2}
 \author{Qingru Hu}
@@ -177,5 +180,59 @@ less radiation energy will reach the midplane.
 According to the heating and cooling radiation balance, 
 less energy will be emittted by the midplane, so the 
 midplane temperature will be lower.
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral1}.3 A solar-mass White Dwarf}}
+\subsection*{(a)}
+The equation of state for degenerate non-relativistic electron gas is:
+\begin{align*}
+    P &= (\frac{3}{\pi})^{\frac{2}{3}} \frac{h^2}{20 m_e} (\frac{\rho}{\mu_e m_u})^{\frac{5}{3}} 
+    = K_{\text{e, d, non}} \rho^{1 + \frac{2}{3}}\\
+    K_{\text{e, d, non}} &= (\frac{3}{\pi})^{\frac{2}{3}} \frac{h^2}{20 m_e} (\frac{1}{\mu_e m_u})^{\frac{5}{3}} \\
+    n &= \frac{3}{2} 
+\end{align*}
+From properties of polytropes we can get:
+\begin{align*}
+    K &= N_n G M^{\frac{n-1}{n}} R^{\frac{3-n}{n}} \\
+    K_{\text{e, d, non}} &= N_{\frac{3}{2}} G M^{\frac{1}{3}} R \\
+    R &= \frac{K_{\text{e, d, non}}}{N_{\frac{3}{2}} G} M^{-\frac{1}{3}}
+\end{align*}
+where $N_{\frac{3}{2}} = 0.424$, $\mu_e = 2$ and $M = 1 \ M_{\bigodot}$. Pluge in the 
+concrete numbers and we get:
+\begin{equation*}
+    R = 1.39 \ R_{\bigoplus}
+\end{equation*}
+
+\subsection*{(b)}
+From properties of polytropes we can get:
+\begin{equation*}
+    \rho_c = r_n \bar{\rho} = r_n \frac{M}{\frac{4}{3} \pi R^3}
+\end{equation*}
+Given $n = \frac{3}{2}$ and $r_n = 5.99$, we can get:
+\begin{equation*}
+    \rho_c = 4.060\times 10^6 \ \g \ \cm^{-3}
+\end{equation*}
+
+\subsection*{(c)}
+The electrons at the center are approaching relativistic motions. 
+Given the electrons in the White Dwarf is degenerate, 
+the De Broglie wavelength of the electron $\lambda_e = \frac{h}{p} = \frac{h}{m_e v_e}$
+is almost equal to the distance between electrons $d = (\frac{1}{n_e})^{-\frac{1}{3}}$. 
+We assume that the electrons at the center are non-relativistic and the momenta is 
+$p = m_e v_e$, we have:
+\begin{align*}
+    \lambda_e &= d \\
+    v_e &= \frac{h}{m_e} (n_e)^{\frac{1}{3}} = \frac{h}{m_e} (\frac{\rho_c}{\mu_e m_u})^{\frac{1}{3}} \\
+    v_e &= 7.778\times 10^{10} \ \cm \ \s^{-1}
+\end{align*}
+If the electrons at the center are non-relativistic, the velocity of the electrons is greater than 
+the velocity of light $c=3\times 10^{10}\ \cm \ \s^{-1} $.
+Therefore, our assumption is not right, that is the electrons at the center are approaching relativistic motions.
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral1}.4 Mass-radius relationship for solid planets}}
+\subsection*{(a)}
+The $n=1$ solution for the Lane-Emden equation is:
+\begin{equation*}
+    \phi_1 = \frac{\sin \xi}{\xi}
+\end{equation*}
 
 \end{document}

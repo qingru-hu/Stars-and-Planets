@@ -262,10 +262,38 @@ Pluge the above approximation into the formula of $M$ and notice $\lambda_1 = \f
 \end{equation*}
 
 \subsection*{(c)}
+Given that $M = 1 \ M_{\bigoplus}$, $\rho_0 = 3 \ \g \ \cm^{-3}$ and $\lambda_1 = \frac{R_{\bigoplus}}{\xi_R}$, 
+use Mathematica to solve the equation numerically:
+\begin{align*}
+    M_{\bigoplus} &= 4 \pi \rho_0 (\frac{R_{\bigoplus}}{\xi_R})^3 \frac{\xi_R}{\sin \xi_R} (\sin \xi_R - \xi_R \cos \xi_R) \\
+    \xi_R &= 2.368 \\
+    \lambda_1 &= \frac{R_{\bigoplus}}{\xi_R} = 0.42 \ R_{\bigoplus}
+\end{align*}
 
 \subsection*{(d)}
+When $n=1$, $\lambda_1$ is a constant, not related to the central density:
+\begin{align*}
+    \lambda_1 = \frac{(n+1) K}{4\pi G} \rho_c^{\frac{1}{n} - 1} = \frac{2 K}{4\pi G} = 0.42 \ R_{\bigoplus}
+\end{align*}
+From the relation:
+\begin{align*}
+    \rho_c &= \rho_0 \frac{\xi_R}{\sin \xi_R} \\
+    \xi_R &= \frac{R}{\lambda_1} 
+\end{align*}
+We can take $\xi_R (R)$ as a function of $\rho_c$ and find the maximum $\xi_R (R)$.
+Denote $y=\xi_R$ and $x = \rho_c$ and differentiate $x$ on both sides:
+\begin{align*}
+    \d(x \sin y) = \d(\rho_0 y) \\
+    \frac{\d y}{\d x} = \frac{\sin y}{\rho_0 - x\cos y}
+\end{align*}
+When $y=\pi$, the first derivative equals zero, and the maximum radius is:
+\begin{equation*}
+    R_{\text{max}} = 1.32 \ R_{\bigoplus}
+\end{equation*}
 
 \subsection*{(e)}
+The polytropic index n will be higher than 1. The bigger the radius, the softer the equation of state, 
+the smaller the adiabatic index $\gamma = 1 + \frac{1}{n}$, and the higher the $n$.
 
 
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral1}.5 The Gamow peak}}

@@ -143,15 +143,15 @@ Since $z$ only depends on $r$, take derivatives on both sides:
 The fraction $\epsilon$ of the stellar luminosity $L_\star$ that is being intercepted 
 by the disk at radius interval $[r, r + \Delta r]$ is:
 \begin{align*}
-    \epsilon &= \frac{1}{2\pi} \int \sin \theta \text{d} \theta \text{d} \phi 
-    = \int_{\theta}^{\theta + \text{d} \theta} \sin \theta \text{d} \theta 
-    = \int_{r}^{r + \text{d} r} \frac{z}{r} \frac{\text{d} }{\mathrm{d} r} (\frac{z}{r}) \text{d}r \\
-    &= \frac{1}{2} \frac{\text{d} }{\mathrm{d} r} (\frac{z}{r})^2 \Delta r
-    = \frac{\beta^2}{2} \frac{\text{d} }{\mathrm{d} r} (\frac{H}{r})^2 \Delta r = \beta^2 \frac{H}{r} (\frac{H}{r})' \Delta r
+    \epsilon &= \frac{1}{2\pi} \int \cos \theta \text{d} \theta \text{d} \phi 
+    = \int_{\theta}^{\theta + \text{d} \theta} \cos \theta \text{d} \theta 
+    = \int_{r}^{r + \text{d} r} \frac{\text{d} }{\mathrm{d} r} (\frac{z}{r}) \text{d}r \\
+    &= \frac{\text{d} }{\mathrm{d} r} (\frac{z}{r}) \Delta r
+    = \beta \frac{\text{d} }{\mathrm{d} r} (\frac{H}{r}) \Delta r
 \end{align*}
 Pulge in $\frac{H}{r} = \sqrt{\frac{kT}{\mu m_u G M}} r^{\frac{1}{2}}$ and denote $\alpha = \sqrt{\frac{k}{\mu m_u G M}}$:
 \begin{align*}
-    \epsilon = \frac{1}{2} \beta^2 \alpha^2 T \Delta r
+    \epsilon = \frac{1}{2} \beta \alpha \sqrt{\frac{T}{r}} \Delta r
 \end{align*}
 
 
@@ -160,16 +160,16 @@ The radiation is in turn intercepted at the disk midplane($z=0$). For the disk a
 the radiation area is $2\pi r \Delta r$. The heating and cooling radiation equation reads:
 \begin{align*}
     \frac{1}{2} L_\star \epsilon = 2\pi r \Delta r \sigma T^4 \\
-    T(r) = (\frac{L_\star \beta^2 \alpha^2}{8\pi \sigma} \frac{1}{r})^{\frac{1}{3}}
+    T(r) = (\frac{L_\star  \beta \alpha}{8\pi \sigma} )^{\frac{2}{7}} r^{-\frac{3}{7}}
 \end{align*}
+%T(r) = (\frac{L_\star \beta^2 \alpha^2}{8\pi \sigma} \frac{1}{r})^{\frac{1}{3}}
 %T^4 = \frac{L_\star \beta^2}{4\pi \sigma} \frac{H}{r^2} (\frac{H}{r})' \\
 %T(r) = (\frac{L_\star \beta^2}{4\pi \sigma} \frac{H}{r^2} (\frac{H}{r})')^{\frac{1}{4}}
 
 \subsection*{(h)}
 Given $L_\star = 1 \ L_{\bigodot}$, $M = 1 \ M_{\bigodot}$, $r = 1\ au$ and $\beta =3$:
 \begin{align*}
-    T(r) = (\frac{L_\star \beta^2 \alpha^2}{8\pi \sigma} \frac{1}{r})^{\frac{1}{3}}
-    = 76.64 \ K
+    T(r) = 177.28 \ \text{K}
 \end{align*}
 
 \subsection*{(i)}

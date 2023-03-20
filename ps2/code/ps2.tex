@@ -309,9 +309,35 @@ At the peak of $f(E)$, the first order derivative of $f(E)$ is zero, so the $(E 
 
 \subsection*{(c)}
 \begin{align*}
-    A &= f(E_0) = -(\frac{2 \pi^2}{kT})^{\frac{1}{3}} - (\frac{\pi^2 E_*}{4kT})^{\frac{1}{3}} \\
+    A &= f(E_0) = (\frac{\pi^2 E_*}{4kT})^{\frac{1}{3}} \\
     B &= \frac{1}{2} f''(E_0) = -\frac{3\pi}{8} \frac{E_*^{\frac{1}{2}}}{E_0^{\frac{5}{2}}}
      = -\frac{3\pi}{8} \frac{E_*^{\frac{1}{2}}}{(\frac{1}{4} \pi^2 E_* (kT)^2)^{\frac{5}{6}}}
 \end{align*}
+Then integrate to get $r_{12}$:
+\begin{align*}
+    r_{12} &= n_1 n_2 \frac{8}{\pi m_\mu} (kT)^{-\frac{3}{2}} S(E_0) \int \exp(f(E_0) + \frac{1}{2} f''(E_0) (E-E_0)^2) \d E\\
+    &= n_1 n_2 \frac{8}{\pi m_\mu} (kT)^{-\frac{3}{2}} S(E_0) \int \exp(A + B (E-E_0)^2) \d E\\
+    &= n_1 n_2 \frac{8}{\pi m_\mu} (kT)^{-\frac{3}{2}} S(E_0) e^A \frac{1}{\sqrt{-B}} \int_0^{+\infty} \exp(- (\sqrt{-B}(E-E_0))^2) \d \sqrt{-B} E\\
+    &= n_1 n_2 \frac{8}{\pi m_\mu} (kT)^{-\frac{3}{2}} S(E_0) e^A \sqrt{\frac{\pi}{-4B}} \\
+    r_{12}&= \frac{4n_1 n_2}{m_\mu \sqrt{- \pi B}} (kT)^{-\frac{3}{2}} S(E_0) e^A
+\end{align*}
+
+\subsection*{(d)}
+Therefore:
+\begin{align*}
+    \gamma = \frac{\d \log r_{12}}{\d \log T} = A - \frac{3}{2} + \frac{5}{6} = -\frac{2}{3} + (\frac{\pi^2 E_*}{4kT})^{\frac{1}{3}}
+\end{align*}
+
+\subsection*{(e)}
+For the pp-chain, $Z_1 = Z_2 = 1$, $m_\mu = 1/2 m_u$:
+\begin{equation*}
+    \gamma_{\text{pp-chain}} = 4.55
+\end{equation*}
+
+For the CNO cycle, $Z_1 = 1$, $Z_2 = 7$, $m_\mu = 14/15 m_u $:
+\begin{equation*}
+    \gamma_{\text{CNO cycle}} = 22.84
+\end{equation*}
+
 
 \end{document}

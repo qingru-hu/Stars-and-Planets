@@ -149,19 +149,41 @@ by the disk at radius interval $[r, r + \Delta r]$ is:
     &= \frac{\text{d} }{\mathrm{d} r} (\frac{z}{r}) \Delta r
     = \beta \frac{\text{d} }{\mathrm{d} r} (\frac{H}{r}) \Delta r
 \end{align*}
-Pulge in $\frac{H}{r} = \sqrt{\frac{kT}{\mu m_u G M}} r^{\frac{1}{2}}$ and denote $\alpha = \sqrt{\frac{k}{\mu m_u G M}}$:
+Pulge in $\frac{H}{r} = \sqrt{\frac{k}{\mu m_u G M}} T^{\frac{1}{2}} r^{\frac{1}{2}}$ and denote $\alpha = \sqrt{\frac{k}{\mu m_u G M}}$:
 \begin{align*}
-    \epsilon = \frac{1}{2} \beta \alpha \sqrt{\frac{T}{r}} \Delta r
+    \epsilon = \beta \alpha \frac{\d }{\d r} (\sqrt{T r}) \Delta r
 \end{align*}
+
 
 
 \subsection*{(g)}
 The radiation is in turn intercepted at the disk midplane($z=0$). For the disk at radius interval $[r, r + \Delta r]$, 
 the radiation area is $2\pi r \Delta r$. The heating and cooling radiation equation reads:
 \begin{align*}
-    \frac{1}{2} L_\star \epsilon = 2\pi r \Delta r \sigma T^4 \\
-    T(r) = (\frac{L_\star  \beta \alpha}{8\pi \sigma} )^{\frac{2}{7}} r^{-\frac{3}{7}}
+    \frac{1}{2} L_\star \epsilon &= 2 \times 2\pi r \Delta r \sigma T^4 \\
+    \frac{\d T}{\d r} &= \frac{16 \pi \sigma}{L_\star \beta \alpha} r^{\frac{1}{2}} T^{\frac{9}{2}} - \frac{T}{r} \\
 \end{align*}
+Since we don not have additional initial or boundary conditions, so we can guess that $T(r) = C r^{n}$.
+Pluge the assumption into the above differential equation we can get:
+\begin{align*}
+    Cn r^{n-1} = \frac{16 \pi \sigma}{L_\star \beta \alpha} r^{\frac{1}{2}} (Cr^n)^{\frac{9}{2}} - C r^{n-1}
+\end{align*}
+This equation must be true for every r, so:
+\begin{align*}
+    Cn &= \frac{16 \pi \sigma}{L_\star \beta \alpha} C^{\frac{9}{2}} - C \\
+    n - 1 &= \frac{9}{2} n + \frac{1}{2}
+\end{align*}
+We get:
+\begin{align*}
+    C &= (\frac{L_\star \beta \alpha}{28 \pi \sigma})^{\frac{2}{7}}\\
+    n &= -\frac{3}{7}
+\end{align*}
+Therefore:
+\begin{equation*}
+    T(r) = (\frac{L_\star \beta \alpha}{28 \pi \sigma})^{\frac{2}{7}} r^{-\frac{3}{7}}
+\end{equation*}
+
+
 %T(r) = (\frac{L_\star \beta^2 \alpha^2}{8\pi \sigma} \frac{1}{r})^{\frac{1}{3}}
 %T^4 = \frac{L_\star \beta^2}{4\pi \sigma} \frac{H}{r^2} (\frac{H}{r})' \\
 %T(r) = (\frac{L_\star \beta^2}{4\pi \sigma} \frac{H}{r^2} (\frac{H}{r})')^{\frac{1}{4}}
@@ -169,7 +191,7 @@ the radiation area is $2\pi r \Delta r$. The heating and cooling radiation equat
 \subsection*{(h)}
 Given $L_\star = 1 \ L_{\bigodot}$, $M = 1 \ M_{\bigodot}$, $r = 1\ au$ and $\beta =3$:
 \begin{align*}
-    T(r) = 177.28 \ \text{K}
+    T(r) = 123.94 \ \text{K}
 \end{align*}
 
 \subsection*{(i)}

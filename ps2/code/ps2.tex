@@ -335,13 +335,13 @@ At the peak of $f(E)$, the first order derivative of $f(E)$ is zero, so the $(E 
     B &= \frac{1}{2} f''(E_0) = -\frac{3\pi}{8} \frac{E_*^{\frac{1}{2}}}{E_0^{\frac{5}{2}}}
      = -\frac{3\pi}{8} \frac{E_*^{\frac{1}{2}}}{(\frac{1}{4} \pi^2 E_* (kT)^2)^{\frac{5}{6}}}
 \end{align*}
-Then integrate to get $r_{12}$:
+When $E$ deviate from $E_0$, the $\exp((E-E_0)^2)$ decreases rapidly, so we can integrate $E$ from $-\infty$ to $+\infty$ to get $r_{12}$:
 \begin{align*}
     r_{12} &= n_1 n_2 \frac{8}{\pi m_\mu} (kT)^{-\frac{3}{2}} S(E_0) \int \exp(f(E_0) + \frac{1}{2} f''(E_0) (E-E_0)^2) \d E\\
     &= n_1 n_2 \frac{8}{\pi m_\mu} (kT)^{-\frac{3}{2}} S(E_0) \int \exp(A + B (E-E_0)^2) \d E\\
-    &= n_1 n_2 \frac{8}{\pi m_\mu} (kT)^{-\frac{3}{2}} S(E_0) e^A \frac{1}{\sqrt{-B}} \int_{-\infty}^{+\infty} \exp(- (\sqrt{-B}(E-E_0))^2) \d \sqrt{-B} E\\
+    &\approx n_1 n_2 \frac{8}{\pi m_\mu} (kT)^{-\frac{3}{2}} S(E_0) e^A \frac{1}{\sqrt{-B}} \int_{-\infty}^{+\infty} \exp(- (\sqrt{-B}(E-E_0))^2) \d \sqrt{-B} E\\
     &= n_1 n_2 \frac{8}{\pi m_\mu} (kT)^{-\frac{3}{2}} S(E_0) e^A \sqrt{\frac{\pi}{-B}} \\
-    r_{12}&= \frac{8n_1 n_2}{m_\mu \sqrt{- \pi B}} (kT)^{-\frac{3}{2}} S(E_0) e^A
+    r_{12}&\approx \frac{8n_1 n_2}{m_\mu \sqrt{- \pi B}} (kT)^{-\frac{3}{2}} S(E_0) e^A
 \end{align*}
 
 \subsection*{(d)}

@@ -32,11 +32,11 @@ Therefore, the free-fall time is:
 \section*{(b)}
 The Jeans Mass is:
 \begin{equation*}
-    M_\text{J} = (\frac{5kT}{\mu m_\text{m}})^{\frac{3}{2}} (\frac{3}{4\pi \rho})^{\frac{1}{2}}
+    M_\text{J} = (\frac{5kT}{G\mu m_\text{u}})^{\frac{3}{2}} (\frac{3}{4\pi \rho})^{\frac{1}{2}}
 \end{equation*}
 Substitute $\rho = \frac{M_\text{J}}{\frac{4\pi}{3} R^3_\text{J}}$ and we get:
 \begin{equation*}
-    R_{\text{J}} = \frac{G\mu m_\text{m}}{5kT} M_\text{J}
+    R_{\text{J}} = \frac{G\mu m_\text{u}}{5kT} M_\text{J}
 \end{equation*}
 
 \section*{(c)}
@@ -55,7 +55,7 @@ energy $\frac{GM^2}{R}$ divided by the free-fall time $t_{\text{ff}}$.
 \end{equation*}
 For a fragment that has $M = M_{\text{M}}$ and $R = R_{\text{J}}$, the radiation rate is approximately:
 \begin{equation*}
-    \frac{\d E}{\d t} = \frac{2\sqrt{2}}{\pi G} (\frac{5kT}{\mu m_{\text{m}}})^{\frac{5}{2}}
+    \frac{\d E}{\d t} = \frac{2\sqrt{2}}{\pi G} (\frac{5kT}{\mu m_{\text{u}}})^{\frac{5}{2}}
 \end{equation*}
 
 \section*{(d)}
@@ -65,9 +65,21 @@ The maximum rate that objects can cool by black body radiation is given by the S
 \end{equation*}
 Pulge in the relation of $R_\text{J}$ and $M_\text{J}$ we have got in (b):
 \begin{equation*}
-    \frac{\d E_{\text{cool}}}{\d t} = 4\pi \sigma (\frac{G\mu m_\text{m}}{5k})^2 M_\text{J}^2 T^2
+    \frac{\d E_{\text{cool}}}{\d t} = 4\pi \sigma (\frac{G\mu m_\text{u}}{5k})^2 M_\text{J}^2 T^2
 \end{equation*}
 
 \section*{(e)}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{frag.png}
+    % \caption{The relation}
+\end{figure}
+
+\section*{(f)}
+Fragmentation stops at this point because if the Jeans Mass gets further smaller, 
+the rate of radiation will be greater than the rate of cooling. When the rate of radiation 
+is greater than the rate of cooling, cooling becomes uneffective and 
+heat will be trapped, transforming the process from isothermal to adiabatic and 
+increasing the Jeans Mass. With the Jeans Mass increased, the fragmentation stops.
 
 \end{document}

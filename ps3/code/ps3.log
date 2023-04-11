@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.18)  12 APR 2023 03:07
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.18)  12 APR 2023 06:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -267,14 +267,14 @@ LaTeX Font Info:    ... okay on input line 16.
 ]
 File: frag.png Graphic file (type bmp)
 <frag.png>
- [2] [3] (./ps3.aux) ) 
+ [2] [3] [4] [5] [6] (./ps3.aux) ) 
 Here is how much of TeX's memory you used:
- 3668 strings out of 479418
- 52850 string characters out of 5888104
+ 3670 strings out of 479418
+ 52900 string characters out of 5888104
  317348 words of memory out of 5000000
- 21144 multiletter control sequences out of 15000+600000
- 537176 words of font info for 49 fonts, out of 8000000 for 9000
+ 21145 multiletter control sequences out of 15000+600000
+ 537184 words of font info for 50 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 31i,11n,37p,218b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,12n,37p,218b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ps3.pdf (3 pages).
+Output written on ps3.pdf (6 pages).

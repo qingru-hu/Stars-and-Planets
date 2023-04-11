@@ -83,6 +83,134 @@ is greater than the rate of cooling, cooling becomes uneffective and
 heat will be trapped, transforming the process from isothermal to adiabatic and 
 increasing the Jeans Mass. With the Jeans Mass increased, the fragmentation stops.
 
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral3}.2  The Messier 80 globular cluster}}  
+\subsection*{(a)}
+The relatino between magnitude and flux is:
+\begin{align*}
+    m_1 - m_2 = -2.5 \log (F_1/F_2) \\
+    F_1/F_2 = (L_1 / L_2) \cdot (d_2 / d_1)^2 
+\end{align*}
+We can rewrite the first equation as:
+\begin{align*}
+    \frac{L_1}{L_2} = 10^{\frac{m_1 - m_2}{-2.5}} (\frac{d_1}{d_2})^2
+\end{align*}
+For Messier 80, we have $m_1 = 7.87$; 
+for Vega, we have $m_2 = 0.026$, $d_2 = 7.7 \text{pc}$ and $L_2 = 40 L_{\bigodot} $. 
+Pluge in those concrete numbers and we have:
+\begin{align*}
+    \frac{L_{\text{M81}}}{L_{\bigodot}} &= A_1 (\frac{d}{\text{pc}})^2 \\
+    A_1 &= 4.9 \times 10^{-4}
+\end{align*}
+
+\subsection*{(b)}
+\textcolor{red}{The stellar surface density}
+
+\subsection*{(c)}
+The mass-to-luminosity ratio (M/L) of globular clusters is higher than that of the Sun 
+because globular clusters are composed of old stars that have low metallicity and are deficient in heavy elements. 
+This means that they have fewer heavy elements than younger stars like the Sun. 
+The M/L ratio is also affected by the presence of dark matter in globular clusters.
+
+\subsection*{(d)}
+Assuming the 1D velocity of stars in the M80 globular cluster obeys 1D Maxwell distribution:
+\begin{align*}
+    f(v_x)dv_x = (\frac{m}{2\pi kT})^{1/2} \exp(-\frac{m v_x^2}{2kT}) d v_x
+\end{align*}
+From an analogy of the gaussian distribution, we can see that the dispersion in the 1D velocity 
+is related to the temperature of the globular cluster:
+\begin{align*}
+    \frac{kT}{m} = \sigma^2 \\
+    kT = m \sigma^2
+\end{align*}
+where $m$ is the mean mass of the stars and $\sigma$ is the one dimensional velocity dispersion.
+According to the Virial Theorem, we can derive the total mass of Messier:
+\begin{align*}
+    W + 2 U_{\text{int}} &= 0\\
+    -\frac{3\pi}{32} \frac{GM^2}{R_s} + 2 \frac{3}{2} kT \frac{M}{m} &= 0 \\
+    M = \frac{32}{\pi} & \frac{\sigma^2 R_s}{G}
+\end{align*}
+Therefore, the luminosity of Messier 80 can be written as:
+\begin{align*}
+    \frac{L_{\text{M81}}}{L_{\bigodot}} = 0.2 \frac{M}{M_{\bigodot}} = \frac{6.4}{\pi} \frac{\sigma^2 R_s}{G M_{\bigodot}} =  A_1 (\frac{d}{\text{pc}})^2
+\end{align*}
+And from the `core radius' we can have derive the relation between $R_s$ and $d$:
+\begin{align*}
+    R_s = \frac{1}{0.64} R_c = \frac{1}{0.64} d \Delta \theta
+\end{align*}
+where $\Delta \theta$ is the observed angular length of the core. Therefore:
+\begin{align*}
+    \frac{d}{\text{pc}} = \frac{10}{\pi} \frac{\sigma^2 R_s}{G M_{\bigodot}} \frac{\text{pc} \Delta \theta}{A_1} \approx 5.86 \times 10^3
+\end{align*}
+our distance to M80 is $d = 5.86 \text{kpc}$.
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral3}.3  The initial mass function (IMF)}}
+\subsection*{(a)}
+The number fraction of Broen Dwarfs $f(n)$ is:
+\begin{align*}
+    f(n) = \frac{\int_{0}^{0.075} \xi(m) \d m}{\int_{0}^{\infty } \xi(m) \d m} = 20.8\%
+\end{align*}
+The mass fraction of Broen Dwarfs $f(m)$ is:
+\begin{align*}
+    f(m) = \frac{\int_{0}^{0.075} m \xi(m) \d m}{\int_{0}^{\infty } m \xi(m) \d m} = 1.27\%
+\end{align*}
+
+\subsection*{(b)}
+Seeing all stars out to a certain magnitude $m_0$ is the same as 
+seeing all stars out to a certain flux $F_0$. Considering the critical situation, 
+$L/d^2 \propto F_0$, and we can get $d \propto L^{1/2} \propto m^{\eta/2}$.
+
+\subsection*{(c)}
+We can see the stars on two condtions: they are within a certain distance  because we can only see out 
+stars to a certain apparent magnitude; they are within their lifetime . 
+Assume that all the stars are formed at a constant speed and are evenly distributed in the space.
+Therefore, the number of stars $\d N$ of mass within $(m, m+\d m)$ that we can see is proportional to 
+their lifetime $t_0$ and the largest distance we can see out to $d_0$:
+\begin{align*}
+    \d N \propto t_0 d_0^3 \xi(m) \d m \propto m^{1-\eta} m^{\frac{3\eta}{2}} m^{-2.35} \d m = m^{\frac{\eta}{2}-1.35} \d m
+\end{align*}
+When $\eta=3.5$, $\frac{\d N}{\d m} = m^{0.4}$, so most stars we see are massive.
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral3}.4 Toomre-Q and disk instability}}
+\subsection*{(a)}
+\begin{align*}
+    E_{\text{therm}} &= kT \frac{M}{\mu m_u} = c_s^2 M = c_s^2 \Sigma \lambda^2 \\
+    E_{\text{grav}} &= - \frac{G M^2}{\lambda} = - \frac{G (\Sigma \lambda^2)^2}{\lambda} = -G\Sigma^2 \lambda^3 \\
+    E_{\text{rot}} &= \frac{1}{2} I \Omega^2 = \frac{1}{2} \Sigma \lambda^2 \lambda^2 \Omega^2 = \frac{1}{2} \Sigma \lambda^4 \Omega^2
+\end{align*}
+Pluge the above three relations into the inequation:
+\begin{align*}
+    \vert \frac{c_s^2 \Omega^2}{2 G^2 \Sigma^2} \vert < 1
+\end{align*}
+The above estimate results in $Q_T \sim \frac{c_s \Omega}{G \Sigma}$, barring a factor of unity.
+% \begin{align*}
+%     Q_T = \frac{c_s \Omega}{G \Sigma} \lesssim  1
+% \end{align*}
+\subsection*{(b)}
+The disk becomes unstable when the Toomre-Q criterion is smaller than 1:
+\begin{align*}
+    Q_T = \frac{c_s \Omega}{\pi G \Sigma} < 1
+\end{align*}
+Considering $\Omega = \sqrt{\frac{GM_{\bigodot}}{r^3}}$, $c_s^2 = \frac{kT}{\mu m_u}$, 
+we have:
+\begin{align*}
+    \sqrt{\frac{kT GM}{\mu m_u r^3}} < \pi G \Sigma
+\end{align*}
+Given that $T = 200 \ K (r/au)^{-1/2}$, $\Sigma = 2\times 10^3 \ \g \cm^{-2} (r/au)^{-1}$ and $\mu=2.3$, 
+we can solve the inequation for $r$ and we get $r>139 \text{au}$. From $r=139 \text{au}$ and outward,
+the disk is unstable.
+
+\subsection*{(c)}
+The mass associated with the critical wavelength $\lambda_c$ is:
+\begin{align*}
+    M_c \sim \lambda_c^2 \Sigma \sim \frac{c_s^4}{G^2\Sigma}
+\end{align*}
+Pluge in $c_s^2 = \frac{kT}{\mu m_u} = \frac{k}{\mu m_u} 200 \ K (r/au)^{-1/2}$ and $\Sigma = 2\times 10^3 \ \g \cm^{-2} (r/au)^{-1}$, 
+we get the mass associated with the critical wavelength is $M_c \sim 3.1 M_J$.
+
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral3}.5 Radial drift of solids in disks}}
+
+
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral3}.6 Planet formation}}
 \subsection*{(a)}
 The relative motion between $M$ and $m$ is the radial velocity of $m$ caused by the eccentricity of m-bodies.

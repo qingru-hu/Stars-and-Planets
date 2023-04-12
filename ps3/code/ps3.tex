@@ -209,7 +209,60 @@ we get the mass associated with the critical wavelength is $M_c \sim 3.1 M_J$.
 
 
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral3}.5 Radial drift of solids in disks}}
+\subsection*{(a)}
+Maybe $t_\text{stop}$ is called `stopping time' because after being dragged by the tha gas for $t_\text{stop}$, 
+the relative velocity between the gas and the particles will become zero. The particles will stop spiraling inward. 
 
+\subsection*{(b)}
+Since the tangential velocities of the particles and gas are the same, the relative velocity is equal to 
+the radial velocity of the small particles. According to the Impulse Theorem:
+\begin{align*}
+    F_\text{drag} t_\text{stop} &= m \Delta v \\
+    \Delta g_\text{drag} t_\text{stop} &= v_r \\
+    v_r \simeq -2\eta \Omega_k^2 r  t_\text{stop} &= -2\eta v_k \Omega_k t_\text{stop}
+\end{align*}
+when $\Omega_k t_\text{stop} << 1$, the approximation is resonable.
+
+\subsection*{(c)}
+The angular momentum of a Keplerian circular orbit is:
+\begin{align*}
+    l &= mv_k r = m\sqrt{GMr} \\
+    \d l / \d r &= \frac{m}{2} \sqrt{\frac{GM}{r}}
+\end{align*}
+The torque induced by the gas is:
+\begin{align*}
+    T = F_\text{drag} r = \frac{m \Delta v}{t_\text{stop}} r = \frac{m \eta v_k}{t_\text{stop}} r
+\end{align*}
+Therefore, the radial velocity of the large particles is:
+\begin{align*}
+    T = \d l / \d t = \frac{\d l}{\d r} \frac{\d r}{\d t} \\
+    \vert v_r \vert = \frac{\d r}{\d t} = T \frac{\d r}{\d l} = \frac{2\eta r}{t_\text{stop}}
+\end{align*}
+When the large particles lose angular momentum, they drift inward, so considering the radial direction as 
+positive the radial velocity should be $v_r = - \frac{2\eta r}{t_\text{stop}}$.
+
+\subsection*{(d)}
+The combined expression of the radial velocity can be:
+\begin{align*}
+    v_r = (2\eta v_k \Omega_k t_\text{stop} - \frac{2\eta r}{t_\text{stop}})\exp(-\frac{m}{m_c}) + \frac{2\eta r}{t_\text{stop}}
+\end{align*}
+where $m$ is the mass of the particles and $m_c$ is the critical mass. When 
+$m\rightarrow 0$, $v_r \rightarrow 2\eta v_k \Omega_k t_\text{stop}$, small particle case
+; when $m\rightarrow +\infty$, $v_r \rightarrow \frac{2\eta r}{t_\text{stop}}$, large particle case.
+
+\subsection*{(e)}
+Because $\Omega t_\text{stop} = 1$, the particles are large and the radial velocity should be calculated as 
+$v_r = \frac{2\eta r}{t_\text{stop}}$. Given $t_\text{stop} \Omega = 1$:
+\begin{align*}
+    v_r &= 2\eta r \Omega_k = 2\eta \sqrt{\frac{GM}{r}} \\
+    t_\text{dritf} &= \frac{r}{v_r} = \frac{1}{2\eta} \sqrt{\frac{r^3}{GM}}.
+\end{align*}
+Radial drift timescales:
+\begin{enumerate}
+    \item[] 1 au: $t_\text{drift} = 8.0 \times 10^1 \ \text{yrs}$
+    \item[] 10 au: $t_\text{drift} = 2.5 \times 10^3 \ \text{yrs}$ 
+    \item[] 100 au: $t_\text{drift} = 8.0 \times 10^4 \ \text{yrs}$ 
+\end{enumerate}
 
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral3}.6 Planet formation}}
 \subsection*{(a)}

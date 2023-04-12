@@ -103,7 +103,30 @@ Pluge in those concrete numbers and we have:
 \end{align*}
 
 \subsection*{(b)}
-\textcolor{red}{The stellar surface density}
+Assume that the stellar density follows an n = 5 polytrope with scaling parameter $R_s=\sqrt{3}\lambda_5$, and the 
+solution for the $n=5$ polytrope is that:
+\begin{align*}
+    \phi_5 = (1 + \frac{R^2}{R_s^2})^{-1/2}
+\end{align*}
+where $\rho  = \rho_c \phi_5^5$. Therefore, the density for the polytrope is:
+\begin{align*}
+    \rho(r, \phi , z) = \rho_c (1 + \frac{r^2 + z^2}{R_s^2})^{-5/2}
+\end{align*}
+We define the stellar surface density at the distance $r$ from the center is $\Sigma(r)$, which 
+satisfies:
+\begin{align*}
+    \Sigma(r) 2\pi r \d r &= \int \int \rho(r, \phi, z) r\d r \d \phi \d z \\
+    \Sigma(r) &= \rho_c \int_{-\sqrt{R_s^2-r^2}}^{\sqrt{R_s^2-r^2}} (1 + \frac{r^2 + z^2}{R_s^2})^{-5/2} \d z \\
+    \Sigma(r) &= 2\rho_c R_s \int_{a}^{1} (1+u^2)^{-5/2} \frac{u}{\sqrt{u^2 - a^2}} \d u
+\end{align*}
+where $a = \frac{R_c}{R_s}$ and $u = \sqrt{R_c^2 + z^2}$.
+The stellar surface density at the distance $R_c$ is half of that $\rho_c R_s$ at the center, so we can solve the 
+equation for $a$:
+\begin{align*}
+    &\int_{a}^{1}(1+u^2)^{-5/2} \frac{u}{\sqrt{u^2 - a^2}} \d u = 1/4 \\
+    &a = 0.64
+\end{align*}
+that is $R_c=0.64R_s$.
 
 \subsection*{(c)}
 The mass-to-luminosity ratio (M/L) of globular clusters is higher than that of the Sun 
@@ -207,7 +230,6 @@ The mass associated with the critical wavelength $\lambda_c$ is:
 Pluge in $c_s^2 = \frac{kT}{\mu m_u} = \frac{k}{\mu m_u} 200 \ K (r/au)^{-1/2}$ and $\Sigma = 2\times 10^3 \ \g \cm^{-2} (r/au)^{-1}$, 
 we get the mass associated with the critical wavelength is $M_c \sim 3.1 M_J$.
 
-
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral3}.5 Radial drift of solids in disks}}
 \subsection*{(a)}
 Maybe $t_\text{stop}$ is called `stopping time' because after being dragged by the tha gas for $t_\text{stop}$, 
@@ -297,10 +319,11 @@ Therefore, the growth timescale of the M-body is:
     \item[] 1 au: $t_\text{growth} = 5.61 \times 10^7 \ \text{yrs}$ 
     \item[] 10 au: $t_\text{growth} = 1.77 \times 10^{10} \ \text{yrs}$ 
 \end{enumerate}
-\textcolor{red}{The timescales are too long to explain the solar system's planets. As we all know, 
+The timescales are too long to explain the solar system's planets. As we all know, 
 the age of the Sun is about 4.6Gyr and the age of the Earth is about 4.5Gyr. 
 The timescale for 10au is larger than the age of the solar system.
-For 1au, the timescale is a bit smaller than 1Gyr, but the }
+Besides, the typical survival time of the protoplanetary disk is about a few Myrs, but 
+according to our calculation, it needs more than 10 Myrs to form an Earth-mass planet at 1au.
 
 \subsection*{(c)}
 If we consider gravitational focusing, then the collision cross section will become:

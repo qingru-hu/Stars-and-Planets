@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx, geometry, subfigure, amsmath, adjustbox, array}
+\usepackage{xcolor}
+\geometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=2cm}
+\setlength{\baselineskip}{12pt}
+\renewcommand\arraystretch{1.5}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\g}{\mathrm{g}}
+
+\title{\textbf{Stars and Planets Problem Set4}}
+\author{Qingru Hu}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral4}.1 Photon diffusion}}
+\subsection*{(a)}
+The mean free path of the distribution $\bar{s}$ is:
+\begin{align*}
+    \bar{s} = \frac{\int_{0}^{+\infty} s l^{-1} e^{-s/l} \d s}{\int_{0}^{+\infty} l^{-1} e^{-s/l} \d s} = 
+    \frac{l \int_{0}^{+\infty} x e^{-x} \d x}{\int_{0}^{+\infty} e^{-x} \d x}
+    = l \ (\text{where } x = s/l)
+\end{align*}
+
+
+\subsection*{(b)}
+The distribution makes the escape time longer. The probability of the step size falling between $s$, $s+\d s$ 
+decreases exponentially as the step size increases. The probability of the step size smaller than the mean free path $l$
+is much more higher than that of the step size bigger than the mean free path, so the escape time will become longer.
+
+\subsection*{(c)}
+I think the escape time will become shorter. If there exists density gradient, diffusion will come into the picture.
+Diffusion will help photons to move from dense core to sparse surface, making the escape time shorter.
+
+
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral4}.2 Ledoux stability criterion}}
+\subsection*{(a)}
+
+\subsection*{(b)}
+
+
+\subsection*{(c)}
+
+
+\subsection*{(d)}
+
+
+\subsection*{(f)}
+
+
+
+\end{document}

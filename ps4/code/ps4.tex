@@ -38,17 +38,48 @@ Diffusion will help photons to move from dense core to sparse surface, making th
 
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral4}.2 Ledoux stability criterion}}
 \subsection*{(a)}
+The expression for the two gradients are:
+\begin{align*}
+    \nabla &= \frac{\d \log T}{\d \log P} \\
+    \nabla_\mu &= \frac{\d \log \mu }{\d \log P}
+\end{align*}
+Divide both sides of Equation (3) by $\d P/ p = \d \log P$:
+\begin{align*}
+    1 &= \chi_\rho \frac{\d \log \rho}{\d \log P} + \chi_T \frac{\d \log T}{\d \log P} + \chi_\mu \frac{\d \log \mu}{\d \log P} \\
+    1 &= \chi_\rho \frac{\d \log \rho}{\d \log P} + \chi_T \nabla + \chi_\mu \nabla_\mu
+\end{align*}
 
 \subsection*{(b)}
-
+Since for an adiabatic gas the composition is the same, $\nabla_\mu = 0$. 
+For constant entropy process, $\nabla = \nabla_\text{ad}$ and $P\propto \rho^{\gamma_{\text{ad}}}, \d \log P/\d \log \rho = \gamma_\text{ad}$.
+Equation(3) becomes:
+\begin{align*}
+    1 &= \chi_\rho / \gamma_\text{ad} + \chi_T \nabla_\text{ad} \\
+    \nabla_\text{ad} &= (1-\chi_\rho / \gamma_\text{ad})/\chi_T
+\end{align*}
 
 \subsection*{(c)}
-
+For an ideal mono-atomic gas, the equation of state is $P = \frac{\rho kT}{\mu m_u}$ and $\gamma_\text{ad} = 5/3$. Besides, 
+$\chi_\rho = 1$ and $\chi_T = 1$.
+\begin{align*}
+    \nabla_\text{ad} &= (1-\chi_\rho / \gamma_\text{ad})/\chi_T = 2/5
+\end{align*}
 
 \subsection*{(d)}
-
-
-\subsection*{(f)}
+From Equation(4) we can get:
+\begin{align*}
+    \frac{\d \log \rho}{\d \log P} = (1 - \chi_T \nabla - \chi_\mu \nabla_\mu)/\chi_\rho
+\end{align*}
+From section (b) we can get:
+\begin{align*}
+    \frac{1}{\gamma_\text{ad}} = (1 - \chi_T \nabla_\text{ad})/\chi_\rho
+\end{align*}
+Th e instability criterion can lead to the condition for convection:
+\begin{align*}
+    \frac{\d \log \rho}{\d \log P} &< \frac{1}{\gamma_\text{ad}} \\
+    (1 - \chi_T \nabla - \chi_\mu \nabla_\mu)/\chi_\rho &< (1 - \chi_T \nabla_\text{ad})/\chi_\rho \\
+    \nabla > \nabla_\text{ad} -& \frac{\chi_\mu}{\chi_T}\nabla_\mu
+\end{align*}
 
 
 

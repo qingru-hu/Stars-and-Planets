@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.4)  23 APR 2023 01:00
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.4)  23 APR 2023 11:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -276,14 +276,17 @@ LaTeX Font Info:    ... okay on input line 16.
 
 [1
 
-] [2] (./ps4.aux) ) 
+]
+File: mu.png Graphic file (type bmp)
+<mu.png>
+ [2] [3] (./ps4.aux) ) 
 Here is how much of TeX's memory you used:
- 4110 strings out of 475644
- 66166 string characters out of 5799831
+ 4119 strings out of 475644
+ 66254 string characters out of 5799831
  417164 words of memory out of 5000000
- 25353 multiletter control sequences out of 15000+600000
+ 25360 multiletter control sequences out of 15000+600000
  474105 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 55i,11n,62p,259b,181s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,11n,62p,259b,271s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ps4.xdv (2 pages, 16536 bytes).
+Output written on ps4.xdv (3 pages, 23016 bytes).

@@ -339,4 +339,7 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT ps4.xdv
+INPUT ./mu.png
+INPUT ./mu.png
+INPUT mu.png
 INPUT ps4.aux

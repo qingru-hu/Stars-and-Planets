@@ -26,9 +26,28 @@ The mean free path of the distribution $\bar{s}$ is:
 
 
 \subsection*{(b)}
-The distribution makes the escape time longer. The probability of the step size falling between $s$, $s+\d s$ 
-decreases exponentially as the step size increases. The probability of the step size smaller than the mean free path $l$
-is much more higher than that of the step size bigger than the mean free path, so the escape time will become longer.
+% The distribution makes the escape time longer. The probability of the step size falling between $s$, $s+\d s$ 
+% decreases exponentially as the step size increases. The probability of the step size smaller than the mean free path $l$
+% is much more higher than that of the step size bigger than the mean free path, so the escape time will become longer.
+The motion of the photon is:
+\begin{align*}
+    \vec{S} = \vec{s}_1 + \vec{s}_2 + \vec{s}_3 + \cdots
+\end{align*}
+The average of the squared length:
+\begin{align*}
+    <S^2> = (\vec{s}_1 + \vec{s}_2 + \vec{s}_3 + \cdots)(\vec{s}_1 + \vec{s}_2 + \vec{s}_3 + \cdots) 
+    = \sum_{i=1}^N \vec{s}_i \cdot \vec{s}_i + \sum_{i=1}^N \sum_{i\neq j}^N \vec{s}_i \vec{s}_j
+\end{align*}
+The second equals 0 because the symmetry of the random walk, so we have:
+\begin{align*}
+    <S^2> &= R^2 = \sum_{i=1}^N \vec{s}_i \cdot \vec{s}_i = N <s^2> \\
+    <s^2> &= \int_{0}^{+\infty} s^2  l^{-1} e^{-s/l} \d s = 2l^2 \\
+    N &= \frac{R^2}{2 l^2}
+\end{align*}
+Therefore, the escape time will be shorter:
+\begin{align*}
+    t_\text{escp} = \frac{N l}{c} = \frac{R^2}{2cl}
+\end{align*}
 
 \subsection*{(c)}
 I think the escape time will become shorter. If there exists density gradient, diffusion will come into the picture.
@@ -82,7 +101,6 @@ Th e instability criterion can lead to the condition for convection:
 \end{align*}
 
 
-
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral4}.3 Structure of the Sun}}
 \subsection*{(a)}
 The relation between the mean molecular mass $\mu$ and the fractional radius is shown as below.
@@ -98,5 +116,116 @@ the core of the sun is mostly composed of Helium, so the mean molecular weight i
 4/3; the interior 20\%-95\% region is mostly composed of Hydrogen, so the mean molecular weight is 
 near 1/2; in the outer 5\% region, metals have been brought into this shell due to convection, so the 
 mean molecular weight increase sharply in the outer shell.
+
+\subsection*{(c)}
+The numerical errors occur in regions near the center and the surface.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics*[width=8cm]{nabla.png}
+\end{figure}
+
+\subsection*{(d)}
+Assume the composition of the Sun is ideal mono-atomic gas. 
+From Exercise2(c) we get that for an ideal mono-atomic gas $\nabla_{\text{ad}} = 2/5=0.4$.
+Therefore, we can roughly guess that the outer 30\% region of the Sun is convective.
+
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral4}.4 Mass-radius relationships for stars}}
+\subsection*{(a)}
+Time $M$ to both sides of Equation(8) and use the homology:
+\begin{align*}
+    \frac{\d L}{\d x} &= \epsilon_0 \rho M T^\nu \\
+    \frac{\d L_1}{\d L_2} &= \frac{\rho_1 M_1 T_1^\nu}{\rho_2 M_2 T_2^\nu} \\
+    L & \propto M^{\nu+2} R^{-3-\nu} \mu^{\nu}
+\end{align*}
+
+\subsection*{(b)}
+\begin{align*}
+    L &\propto M^3 \nu^4 \\
+    L & \propto M^{\nu+2} R^{-3-\nu} \mu^{\nu} \\
+    M^{\nu+2} R^{-3-\nu} \mu^{\nu} &\propto M^3 \nu^4 \\
+    R &\propto M^{\frac{\nu -1}{\nu +3}} \mu^{\frac{\nu -4}{3+\nu }}
+\end{align*}
+
+\subsection*{(c)}
+From Equation(9) and the given equations we can have:
+\begin{align*}
+    T &\propto MR^{-1} \mu \\
+    R &\propto M^{\frac{\nu -1}{\nu +3}} \mu^{\frac{\nu -4}{3+\nu }} \\
+\end{align*}
+Therefore we can get:
+\begin{align*}
+    T &\propto M^{\frac{4}{3+\nu}} \mu^{\frac{7}{3+\nu}} \\
+    M &\propto T^{} \mu ^{-7/4}
+\end{align*}
+Assume the composition of the star are almost the same, so $\mu$ is a constant.
+\begin{align*}
+    \frac{M_{\text{min}}}{M_{\bigodot}} \propto (\frac{T_{\text{min}}}{T_{\bigodot}})^{\frac{3+\nu}{4}}
+\end{align*}
+Plug in $\nu=4$ and $T_{\bigodot} = 2\times 10^7 \ K, T_{\text{min}} = 10^7\ K$, and $M_{\text{min}} = 0.30 M_{\bigodot}$.
+
+\subsection*{(d)}
+This answer is not correct. We have observed stars that burn hydrogen with masses smaller than $0.30 M_{\bigodot}$.
+
+\subsection*{(e)}
+I think the relation $L \propto M^3 \mu^4$ will not hold for small mass stars. We derive this relation from 
+radiative diffusion, but for small mass stars, convection is dominant, so the formula for radiative diffusion 
+is not correct for small mass stars.
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral4}.5 Critical core mass for planets}}
+\subsection*{(a)}
+For a radiatively supported envelope, assuming the opacity $\kappa$ and luminosity $L$ are constant:
+\begin{align*}
+    \frac{L}{4 \pi r^2} &= F = -D_{phot} \nabla u_{rad} = - \frac{c}{3} \frac{1}{\kappa \rho} \frac{16\sigma}{c} 4T^3 \frac{\d T}{\d r} \\
+    \frac{\d T}{\d r} &= -\frac{3 \kappa \rho L}{64 \pi r^2 \sigma T^3} 
+\end{align*}
+From the hydrostatic balance, we also have:
+\begin{align*}
+    \frac{\d P}{\d r} = -\frac{GM_{tot}}{r^2} \rho
+\end{align*}
+Therefore, the radiation difussion gradient is:
+\begin{align*}
+    \nabla_{rad} = \frac{\d \log T}{\d \log P} &= \frac{P}{T} \frac{\d T}{\d r} \frac{\d r}{\d P} = \frac{3 \kappa L P}{64 \pi \sigma G M_{tot} T^4} = \frac{WP}{G M_{tot} T^4} \\
+    \d(WP) &= \d(GM_{tot} T^4/4) \\
+    P &= \frac{GM_{tot}T^4}{4W} 
+\end{align*}
+where $W = 3\kappa L / 64 \pi \sigma_{sb}$.
+
+\subsection*{(b)}
+The ideal gas law and hydrostatic balance are:
+\begin{align*}
+    P &= \frac{\rho kT}{\mu m_u} \\
+    \frac{\d P}{\d r} &= -\frac{GM_{tot}}{r^2} \rho
+\end{align*}
+Plug in Equation(11) and we can get:
+\begin{align*}
+    \d T = -A \frac{\d r}{r^2}
+\end{align*}
+where $A = GM_{tot}\mu m_u / 4k$.
+Integrate on both sides and we get:
+\begin{align*}
+    T  = A \frac{1}{r}
+\end{align*}
+
+\subsection*{(c)}
+\begin{align*}
+    \rho = -\frac{r^2}{G M_{tot}} \frac{\d P}{\d T} \frac{\d T}{\d r} = \frac{A^4}{W}\frac{1}{r^3}
+\end{align*}
+Integrate this density profile we can get:
+\begin{align*}
+    M_{env} = \int_{r_{in}}^{r_{out}} \rho 4\pi r^2 \d r = \frac{4\pi}{W} A^4 \Lambda
+\end{align*}
+where $\Lambda  = \log (r_{out}/r_{in}), A = GM_{tot}\mu m_u / 4k$.
+
+
+\subsection*{(d)}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics*[width=12cm]{e5.png}
+\end{figure}
+
+\subsection*{(e)}
+
+\subsection*{(f)}
 
 \end{document}

@@ -1,0 +1,201 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx, geometry, subfigure, amsmath, adjustbox, array}
+\usepackage{xcolor}
+\geometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=2cm}
+% \setlength{\baselineskip}{12pt}
+\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\g}{\mathrm{g}}
+\newcommand{\todo}{\color{red}}
+
+\title{\textbf{Stars and Planets Problem Set5}}
+\author{Qingru Hu}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral5}.1 Solar photosphere}}
+\subsection*{(a)}
+The Saha equation for the ionization of hydrogen is:
+\begin{align*}
+    \frac{x^2}{1-x} = \frac{e^{-13.6eV/kT}}{n_H} (\frac{2\pi kT m_e}{h^2})^{3/2}
+\end{align*}
+where $x = n_{\text{ H \uppercase\expandafter{\romannumeral2}}} / n_{\text{ H \uppercase\expandafter{\romannumeral1}}}$ is 
+the ionization fraction.
+
+Assume the temperature of the Sun's photosphere is $T=5780K$ and $n_H = \frac{\rho}{m_u}$:
+\begin{align*}
+    \frac{x^2}{1-x} &= 8.14 \times 10^{-9} \\
+    x & \approx 0
+\end{align*}
+Therefore, hydrogen in the solar photosphere is mostly neutral.
+
+\subsection*{(b)}
+The Sun's photosphere has an effective temperature of about $T_{eff}=5780 K$ and a density of $\rho = 3 \times 10^{-7} \g/\cm^3$.
+
+Although the average thermal energy of the photospheric gas (about 0.5 eV per atom) and the average photon energy of the photospheric radiation (about 2 eV) is lower than the dissociation energy of molecular hydrogen 4.5eV, 
+but there still exist large amounts of photospheric gas and radiation in the high-energy end of the distribution function to dissociate the molecular hydrogen. 
+Therefore, hydrogen molecules that form in the photosphere will quickly be destroyed by interactions with high energy gas or photons.
+
+Besides, there are not many efficient ways to form hydrogen molecules. The most common way to form molecular hydrogen in interstellar space is by catalysis on dust grains, 
+but dust grains are absent in the Sun's photosphere due to sublimation.
+Another possible way to form molecular hydrogen is by three-body reactions, 
+such as H + H + H -> H2 + H or H + H + He -> H2 + He, 
+but these reactions are very slow and require high densities. 
+The density of the photosphere is too low for these reactions to be significant.
+
+Therefore, molecular hydrogen is virtually nonexistent in the Sun's photosphere due to its high dissociation rate and low formation rate.
+
+\subsection*{(c)}
+The net reaction of the combination of hydrogen atoms into molecules is: H + H -> H2.
+Assuming the internal partition functions are all 1, the Saha eqaution writes:
+\begin{align*}
+    \frac{n_{H, atom} n_{H, atom}}{n_{H2}} = (\frac{2\pi kT}{h^2} \frac{m_u}{2})^{3/2} e^{-4.48eV/kT}
+\end{align*}
+If molecular hydrogen makes up 1\% of the hydrogen, then $n_{H, atom} = 0.99 n_H$, $n_{H2} = 0.01 n_H$ and $n_H = \rho/m_u$.
+We can solve the above equation numerically and get a temperature of $T=3800\ K$.
+
+Sunspots should become cooler than 3800K before molecular hydrogen will make 
+up more than 1\% of the hydrogen.
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral5}.2 Rotational emission with CO}}
+\subsection*{(a)}
+The moment of inertia of the CO molecule $I$ is:
+\begin{align*}
+    I &= m_C r_C^2 + m_O r_O^2 \\
+      &= 12 m_u (8a_0/7)^2 + 16 m_u (6a_0 /7)^2 \\
+      &= 192m_u a_0^2/7 
+\end{align*}
+where $r$ is the distance to the center of mass.
+The rotational constant $B_e$ is:
+\begin{align*}
+    B_e = \frac{\hbar^2}{2I} = \frac{7}{384}\frac{\hbar^2}{m_ua_0^2} = 3.16 K
+\end{align*}
+
+\subsection*{(b)}
+Since $A_{ul}^{-1}$ is the expectation time of the excited state, the probability of an atom at the excited state 
+falling back to the lower state in the unit time interval 1s is:
+\begin{align*}
+    P_{ul, 1s} = \frac{1}{A_{ul}^{-1}}
+\end{align*}
+The expectation number of the excited atoms that will fall back in the unit time interval is:
+\begin{align*}
+    N_{ul, 1s} = \frac{N_u}{A_{ul}^{-1}}
+\end{align*}
+The released energy in the unit time interval is:
+\begin{align*}
+    E_{ul, 1s} = \frac{N_u h \nu_{ul}}{A_{ul}^{-1}} = N_u h \nu_{ul} A_{ul}
+\end{align*}
+The energy flux per unit time per unit solid angle is just:
+\begin{align*}
+    F_{ul} = \frac{N_u h \nu_{ul} A_{ul}}{4\pi}
+\end{align*}
+
+\subsection*{(c)}
+According to the Boltzman distribution:
+\begin{align*}
+    \frac{N_u}{N} &= \frac{g_u}{Z} e^{-\frac{E_u}{kT}} \\
+    \frac{N_u}{N g_u} &= \frac{1}{Z} e^{-\frac{E_u}{kT}} \\
+    \log (\frac{N_u}{N g_u}) &= -\log Z - \frac{E_u}{kT}
+\end{align*}
+The plot for $J=0, 1, \cdots, 10$ and $T=10, 20, 30K$ is shown as below.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics*[width=10cm]{rotation.png}
+\end{figure}
+
+\subsection*{(d)}
+From Equation(2) we can see that, only $N_u$ in the flux $F_{ul}$ is related to the temperature.
+
+From the plot we can see that, the fraction of $N_u$ to $N$ is almost the same for all three temperatures at $J_u=1$ and $J_u = 2$. 
+If Angie only observes low level J lines ($J_u=1$ and $J_u = 2$), the fluxes at which the cloud radiates in the CO line are 
+almost the same for all three temperature. Therefore, she couldn't digtinguish between different temperatures.
+
+At high Js, the fraction of $N_u$ to $N$ is very small, even $10^{-25}$ for $J_u=8$ and $T=10K$. Thus, the transition line flux 
+for low temperatures are too small, resulting in large error in determining temperatures.
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral5}.3 Mars and Titan}}
+\subsection*{(a)}
+If we ignore the greenhouse effect, we can calculate the 
+surface temperature from the equilibrium of radiation:
+\begin{align*}
+    T_{eq} = T_{eff, \star} (1-a)^{1/4} (\frac{R_\star}{2d})^{1/2} = 210.42 K
+\end{align*}
+where $a=0.25$ $T_{eff, \star}=5780K$, $R_\star = 6.96 \times 10^{10} \cm$ and $d=1.52$au.
+
+\subsection*{(b)}
+The hydrostatic balance and the ideal gas law are:
+\begin{align*}
+    -\frac{\d P}{\d z} &= \rho \frac{GM}{r^2} \\
+    P &= \frac{\rho kT}{\mu m_u}
+\end{align*}
+The pressure scaleheight of the atmosphere is:
+\begin{align*}
+    H = -\frac{P}{\d P/ \d z} = \frac{kT}{\mu m_u} \frac{r^2}{GM}
+\end{align*}
+For Mars, $T = T_{eq} = 210.42 K$, $r = 3.397\times10^8 \cm$, 
+$M = 0.11 M_{\bigoplus}$ and $\mu=44$, so the scaleheight is $H = 10.46 \text{km}$.
+
+\subsection*{(c)}
+For Mars, $P=0.00628 \ \text{atm} = 636.3 \ Pa = 6363 \ Ba$ and 
+$T=T_{eq} = 210.42 K$, we have the density of the atmosphere of Mars $\rho$:
+\begin{align*}
+    \rho = \frac{P \mu m_u}{kT} = 1.6 \times 10^{-5} \ \g / \cm^{-3}
+\end{align*}
+
+The total mass of the CO2 atmosphere $M$ is:
+\begin{align*}
+    M = 4\pi r^2 H \rho = 2.43 \times 10^{19} \g
+\end{align*}
+
+\subsection*{(d)}
+When the Sun ascends the RGB, it will reach a peak luminosity of 
+about 2300 times its current value and a radius of about 170 times its current value. 
+According to the equilibrium of radiation, the surface temperature of 
+Titan will increase significantly, which will cause Titan's atmosphere 
+to heat up and expand, possibly lossing some of its mass to space.
+It could also trigger more complex chemical reactions in Titan's atmosphere, 
+producing more organic compounds. After receiving more radiation when the Sun ascends the RGB, Titan's 
+atmosphere may become hotter, thinner and richer in compounds, 
+and not suitable for human settlement.
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral5}.4 Habitable Zone}}
+\subsection*{(a)}
+Assuming the simple greenhouse model:
+\begin{align*}
+    T_s &= (1+\tau_{IR})^{1/4} T_{irr} \\
+    T_{irr} &= T_{eff, \star} (1-a)^{1/4} (\frac{R_\star}{2d})^{1/2} \\
+\end{align*}
+For the Earth, $T_s \propto d^{-1/2}$.
+If the Earth is at 0.95 au, $T_{s, max} = T_s 0.95^{-1/2} = 295.5\ K =22.5 \ ^\circ C$.
+If the Earth is at 1.37 au, $T_{s, max} = T_s 1.37^{-1/2} = 246.1\ K = -26.9 \ ^\circ C$.
+Kasting's values correspond to the surface temperature range $-26.9 \ ^\circ C \leq T_s \leq 22.5 \ ^\circ C$.
+\subsection*{(b)}
+The equilibrium temperature of Venus $T_{irr}$ is:
+\begin{align*}
+    T_{irr} &= T_{eff, \star} (1-a)^{1/4} (\frac{R_\star}{2d})^{1/2} = 227.52 \ K
+\end{align*}
+where $a=0.77$, $T_{eff, \star}=5780K$, $R_\star = 6.96 \times 10^{10} \cm$ and $d=0.72$au.
+Assuming a simple greenhouse model:
+\begin{align*}
+    T_s &= (1+\tau_{IR})^{1/4} T_{irr} \\
+    \tau_{IR} &= (T_s / T_{irr})^4 - 1 = 109.1
+\end{align*}
+Therefore, the IR optical depth of Venus atmosphere is $\tau_{IR} = 109.1$.
+
+\subsection*{(c)}
+Combing the radiation equilibrium and the greenhouse model, we can 
+get an expression for $d$:
+\begin{align*}
+    d = \frac{R_\star}{2} ((1+\tau)(1-a))^{1/2} (T_{eff, \star} / T_s)^2
+\end{align*}
+For a surface temperature $T_s = 295.5 \ K$, the distance to the sun is $d=4.48$au;
+for a surface temperature $T_s = 246.1 \ K$, the distance to the sun is $d=6.46$au.
+
+Therefore, the range of the habitable zone for Venus is $4.48 \ \text{au} \leq d \leq 6.46 \ \text{au}$.
+
+
+\end{document}

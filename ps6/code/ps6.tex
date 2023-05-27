@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx, geometry, subfigure, amsmath, adjustbox, array}
+\usepackage{xcolor}
+\geometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=2cm}
+\setlength{\baselineskip}{12pt}
+\renewcommand\arraystretch{1.5}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\g}{\mathrm{g}}
+
+\title{\textbf{Stars and Planets Problem Set6}}
+\author{Qingru Hu}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral6}.1 Synodical timescale}}
+\subsection*{(a)}
+The $t_{syn}$ is the least common multiple of $P_1$ and $P_2$:
+\begin{align*}
+    t_{syn} = [P_1, P_2]
+\end{align*}
+
+\subsection*{(b)}
+\textcolor{red}{how to calculate?}
+
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral6}.2 Epicycle approximation}}
+\subsection*{(a)}
+\textcolor{red}{how to prove?}
+
+\subsection*{(b)}
+\textcolor{red}{how to prove?}
+
+\subsection*{(c)}
+\begin{align*}
+    \phi_{\text{eff}}'(r_o) &= An r_o^{n-1} - \frac{l_z^2}{2} \frac{2}{r_o^3} = 0 \\
+    r_o &= (\frac{l_z^2}{An})^{\frac{1}{n+2}}
+\end{align*}
+
+\subsection*{(d)}
+Expanding the potential around $r = r_o$:
+\begin{align*}
+    \phi_{\text{eff}} = \phi_{\text{eff}}(r_o) + \phi_{\text{eff}}'(r_o) x + \frac{1}{2} \phi_{\text{eff}}''(r_o) x^2
+\end{align*}
+where $x = r - r_o$ and $\phi_{\text{eff}}'(r_o)=0$.
+Therefore the equation of motion (3) becomes:
+\begin{align*}
+    \ddot{x} &= - x \phi_{\text{eff}}''(r_o) = -x(An(n-1)r_o^{n-2} + 3 l_z^2 r_o^{-4}) = -(n+2)l_z^2 r_o^{-4} x \\
+\end{align*}
+Compared to $\ddot{x} = -\kappa^2 x$, we have:
+\begin{align*}
+    \kappa &= \frac{\sqrt{n+2} l_z}{r_o^2} = \sqrt{n+2} (\frac{l_z^{\frac{2-n}{2}}}{An})^{-\frac{2}{n+2}}
+\end{align*}
+In a Keplerian potential (n=-1):
+\begin{align*}
+    \kappa = A^2 / l_z^3 = \Omega
+\end{align*}
+where $\Omega$ is the orbital frequency.
+\textcolor{red}{why the orbital frequency}
+
+\subsection*{(e)}
+\textcolor{red}{For which values of n does the circular orbit solution become unstable? What is the physical
+reason?}
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral6}.3 The Trojans}}
+
+\section*{\textbf{Exercise \uppercase\expandafter{\romannumeral6}.4 Tides}}
+\section*{(a)}
+For the Earth-Moon system, the value for n (the mean motion) is $n = \frac{2\pi}{28 \text{days}} = 0.22 \text{day}^{-1}$.
+
+\section*{(b)}
+The spin-down timescale is:
+\begin{align*}
+    t_{\mathrm{de}-\text { spin, } \mathrm{p}}^{-1}=\frac{\dot{\Omega}_p}{\Omega_p}=-\frac{\Gamma}{\Omega_p I_p}=-\frac{3 k_{2 p}}{2 Q C_I} \frac{m_s^2}{\left(m_s+m_p\right) m_p}\left(\frac{R_p}{d}\right)^3 \frac{n}{\Omega_p} n
+\end{align*}
+For the Moon to spin-down the Earth, the love number $k_{2p} = $, the Quality factor $Q = $, 
+the inertia factor $C_I = $, $m_s = $, $m_p = $, $R_p = $, $d = $, $n = $, and $\Omega_P = $. 
+Therefore the timescale for the Moon to spin down the Earth is: .
+
+For the Sun to spin-down the Earth, the love number $k_{2p} = $, the Quality factor $Q = $, 
+the inertia factor $C_I = $, $m_s = $, $m_p = $, $R_p = $, $d = $, $n = $, and $\Omega_P = $. 
+Therefore the timescale for the Sun to spin down the Earth is: .
+
+\end{document}

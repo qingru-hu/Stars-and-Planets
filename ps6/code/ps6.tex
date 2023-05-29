@@ -114,11 +114,9 @@ From the law of cos, we have:
 Because $m<<1$, we can expand $r_1^{-1}$ as:
 \begin{align*}
     r_1^{-1} &= (m^2 + 2mr\cos \theta + r^2)^{-1/2} \\
-            &\approx r^{-1} (1 + 2(m/r) \cos \theta + (m/r)^2)^{-1/2} \\
-            &\approx r^{-1} (1 - (m/r) \cos \theta) \\
-            &\approx (1-\Delta) (1 - (m/r) \cos \theta) \\
-            &= 1 - (m/r) \cos \theta - \Delta \\
-            &\approx 1 - m \cos \theta - \Delta
+            &\approx (1 + 2\Delta + \Delta^2 + 2m\cos \theta)^{-1/2} \\
+            &\approx 1 - 1/2 (2\Delta + \Delta^2 + 2m\cos \theta) + 3/8 (2\Delta + \Delta^2 + 2m\cos \theta)^2 \\
+            &\approx 1 - \Delta + \Delta^2 -m \cos \theta
 \end{align*}
 We can expand $r_2^{-1}$ as:
 \begin{align*}
@@ -133,15 +131,42 @@ We can expand $r^2$ as:
 Plug the three above relations into the effective potential:
 \begin{align*}
     \phi_{\text{eff}} &= -\frac{1-m}{r_1} - \frac{m}{r_2} - \frac{1}{2}r^2 \\
-    \phi_{\text{eff}} &= m(\cos \theta - \frac{1}{\sqrt{2(1- \cos \theta)}}) - \frac{1}{2}\Delta^2 - \frac{3}{2}
+    \phi_{\text{eff}} &= m(\cos \theta - \frac{1}{\sqrt{2(1- \cos \theta)}}) - \frac{3}{2}\Delta^2
 \end{align*}
 
 \section*{(b)}
-\textcolor{red}{how to derive!}
+The vector form of the equation of motion is:
+\begin{align*}
+    \ddot{\boldsymbol{r}} + 2(\boldsymbol{\omega} \times \dot{\boldsymbol{r}}) = - \nabla \phi_{\text{eff}}
+\end{align*}
+The radial component of the equation of motion is:
+\begin{align*}
+    \ddot{r} - r\dot \theta^2 -2 r \dot{\theta}= - \frac{\partial \phi_{\text{eff}}}{\partial r}
+\end{align*}
+Plug in the expression of the effective potential and we have:
+\begin{align*}
+    \ddot{\Delta} - (1 + \Delta) \dot{\theta}^2 - 2(1 + \Delta)\dot{\theta} = 3\Delta
+\end{align*}
 
 \section*{(c)}
+Assume $\Delta << 1$ and we get:
+\begin{align*}
+    \ddot{\Delta} - \dot{\theta}^2 - 2\dot{\theta} = 3\Delta
+\end{align*}
+And $\dot{\theta}^2$ must be the higher order small value compared to $\dot{\theta}$. 
+Therefore, the above equation can be reduced to:
+\begin{align*}
+    \ddot{\Delta} - 2\dot{\theta} = 3\Delta
+\end{align*}
+If the objects are confined in a small range of radius, then the motion 
+along the radial direction can not be too large, so $\ddot{\Delta}$ is also a 
+higher order small value. Equation (8) can be reduced to:
+\begin{align*}
+    2\dot{\theta} + 3\Delta = 0
+\end{align*}
 
 \section*{(d)}
+
 
 \section*{(e)}
 

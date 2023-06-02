@@ -283,12 +283,14 @@ the total radial width of these Trojans is:
 \section*{(h)}
 Expand the potential to the second order at L4 $\theta=\pi/3$:
 \begin{align*}
-    U''/m &= 3/2(2\cos \theta + \frac{1}{2} \sin^{-3} \frac{\theta}{2} \cos ^2 \frac{\theta}{2} + \frac{1}{4} \sin ^{-1} \frac{\theta}{2}) \\
-    \omega_{\text{lib}} &= \sqrt{k/m} = \sqrt{U''/m} = \sqrt{4.5} = \frac{3\sqrt{3}}{2} \ \omega \\
-    t_{\text{lib}} &= \frac{2\pi}{\omega_{\text{lib}}} = \frac{1}{2.12}\frac{2\pi}{\omega} = 0.47 t
+    U'' &= 3m/2(2\cos \theta + \frac{1}{2} \sin^{-3} \frac{\theta}{2} \cos ^2 \frac{\theta}{2} + \frac{1}{4} \sin ^{-1} \frac{\theta}{2}) \\
+    \omega_{\text{lib}} &= \sqrt{U''} = \frac{3\sqrt{3m}}{2} \ \omega
 \end{align*}
-The orbital period for Jupiter is $t=12$ years, so the orbital period for Jupiter's Trojans around L4 is $t_{\text{lib}}=5.6$ years.
-\textcolor{red}{not correct}
+where $m = M_J/(M_J + M_{\bigodot})$.
+\begin{align*}
+    t_{\text{lib}} &= \frac{2\pi}{\omega_{\text{lib}}} = \frac{2}{3\sqrt{3m}}\frac{2\pi}{\omega} = 12.5 t
+\end{align*}
+The orbital period for Jupiter is $t=12$ years, so the orbital period for Jupiter's Trojans around L4 is $t_{\text{lib}}=150$ years.
 
 \section*{\textbf{Exercise \uppercase\expandafter{\romannumeral6}.4 Tides}}
 \section*{(a)}
@@ -418,7 +420,7 @@ For the inner perturber, when in a 3:2 resonance $j=2$, $G_e^j = -1.66$ and $\de
 Assuming the inner perturber is an 10 Earth-mass planet orbiting a solar-mass star at 1 au, 
 $q_1 = 10m_{\bigoplus}/m_{\bigodot}$ and $n_1 = 2\pi/1 $yr.
 The equilibrium eccentricity is $e_{\text{eq}} = 0.004$ and the equilibrium resonance angle is 
-$\phi_{\text{eq}} = -187.5 ^{\circ}$.
+$\phi_{\text{eq}} = 187.5 ^{\circ}$.
 
 \section*{(c)}
 The equation for $\dot{\phi_{\text{res}}}$ is:
@@ -434,6 +436,12 @@ Set $\dot{\phi_{\text{res}}}=0$ and assume that $n_2 = 2/3 n_1$:
 \end{align*}
 
 \section*{(d)}
-\textcolor{red}{what???}
+When 
+\begin{align*}
+    n_1 t_a &< \frac{1}{G_e^j q_1} \sqrt{\frac{t_a}{2(j+ \delta_1)t_e}} \\
+    \sin \phi_{\text{eq}} > 1
+\end{align*}
+, the resonance angle has no solution.
+If $t_a$ is too low, then the semimajor axis will be totally damped before it was trapped into resonance.
 
 \end{document}

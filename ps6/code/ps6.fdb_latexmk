@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1685708564 "ps6.xdv" "ps6.pdf" "ps6" 1685708565
-  "ps6.xdv" 1685708564 92448 de4e4615f366fee51abbee0051d1f5b1 "xelatex"
+["xdvipdfmx"] 1685711836 "ps6.xdv" "ps6.pdf" "ps6" 1685711837
+  "ps6.xdv" 1685711836 94024 36006019c54741e8eb8cf933e6cac186 "xelatex"
   (generated)
   "ps6.pdf"
-["xelatex"] 1685708563 "d:/github/Stars-and-Planets/ps6/code/ps6.tex" "ps6.xdv" "ps6" 1685708565
+["xelatex"] 1685711835 "d:/github/Stars-and-Planets/ps6/code/ps6.tex" "ps6.xdv" "ps6" 1685711837
   "Ls.png" 1685416514 48290 ee638061612c58b2b64c41c1788626c7 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1667557178 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1667552699 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -64,9 +64,9 @@
   "c:/texlive/2022/texmf-dist/web2c/texmf.cnf" 1667552418 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/texlive/2022/texmf-var/web2c/xetex/xelatex.fmt" 1667566889 5575393 bc29f7eb9d1e7cbdd17d35ad5a86afc6 ""
   "c:/texlive/2022/texmf.cnf" 1667566789 713 e69b156964470283e0530f5060668171 ""
-  "d:/github/Stars-and-Planets/ps6/code/ps6.tex" 1685708562 19779 679f8b24650b5217d91b119d2dd0bed4 ""
-  "ps6.aux" 1685708564 70 ce859c66a29e33e992675fd1e4d713a0 "xelatex"
-  "ps6.tex" 1685708562 19779 679f8b24650b5217d91b119d2dd0bed4 ""
+  "d:/github/Stars-and-Planets/ps6/code/ps6.tex" 1685711835 20057 a4fadfa084182ecf38a952e591591009 ""
+  "ps6.aux" 1685711836 70 ce859c66a29e33e992675fd1e4d713a0 "xelatex"
+  "ps6.tex" 1685711835 20057 a4fadfa084182ecf38a952e591591009 ""
   (generated)
   "ps6.aux"
   "ps6.log"
